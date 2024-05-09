@@ -1,22 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arda Portofolio</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header class="container-navigation">
-        <div>Ini Logo</div>
-
+        <div class="navigation-icon"></div>
         <nav>
-            <button>Home</button>
-            <button>Our Package</button>
-            <button>Call Us</button>
+            <button id="home-btn">Home</button>
+            <button id="package-btn">Our Websites</button>
+            <button id="contact-btn">Contact Us</button>
         </nav>
     </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Arda's Portfolio</h1>
+            <p>Explore our latest projects</p>
+        </div>
+    </section>
+
+    <hr />
+
+    <article class="content-container">
+        <header>
+            <h3 class="sub-title">Limitless Freedom is Ultimate Loneliness</h3>
+        </header>
+
+        <section class="core-content">
+            <div class="core-item item-left">
+                <div class="banner-item" style="background-image: url('../asset/tenkaa.png');"></div>
+                <div class="banner-item" style="background-image: url('../asset/mizuhara.png');"></div>
+                <div class="banner-item" style="background-image: url('../asset/mai.png');"></div>
+            </div>
+
+            <div class="core-item item-right">
+                <header>
+                    <h2>Contact Us</h2>
+                    <br><br>
+                </header>
+
+                <form class="contact-form">
+                    <div class="form-field">
+                        <label>Username:</label>
+                        <input type="text" id="form-username" required />
+                    </div>
+                    <div class="form-field">
+                        <label>Date:</label>
+                        <input type="date" id="form-date" required />
+                    </div>
+                    <button type="submit" id="send-btn">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="our-package-content">
+            <h1>Our Websites</h1>
+            <br><br>
+            <div class="group-members">
+                <div class="member">
+                    <a href="https://mizuhara-creator.github.io/waifuku.github.io/"> 
+                    <img src="asset/akane.png" alt="Ren Yamashiro" class="member-image">
+                    </a>
+                </div>
+                <div class="member">
+                    <a href="https://mizuhara-creator.github.io/tenkaarda.github.io/"> 
+                        <img src="asset/yakumoo.png" alt="Ren Yamashiro" class="member-image">
+                        </a>
+                </div>
+                <div class="member">
+                    <a href="https://bit.ly/ArdaPorto3"> 
+                        <img src="asset/renn.png" alt="Ren Yamashiro" class="member-image">
+                        </a>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <p>&copy; Romansa Ardana Putra.</p>
+        <p> SMK Negeri 11 Semarang.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
